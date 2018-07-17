@@ -13,19 +13,3 @@ eureka:
     fetch-registry: false #表示自己就是注册中心，职责维护实例，不检索服务
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/    
----
-server:
-  port: 7003
-spring:
-  application:
-    name: eureka-server-7003
-eureka:
-  instance:
-    hostname: eureka7003.com #eureka服务端实例名称
-  server:
-    enable-self-preservation: true  #eureka自我保护机制，一般不要关闭
-  client:
-    register-with-eureka: false #不能注册自己
-    fetch-registry: false #表示自己就是注册中心，职责维护实例，不检索服务
-    service-url:
-      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/    
